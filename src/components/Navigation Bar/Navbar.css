@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@300;400;700&display=swap");
+
+:root {
+  --lavender: #734f96;
+  --grey: #2e2e2e;
+}
+
+*{
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  /* background-color: #E6E6FA; */
+  border-radius: 8px;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+button {
+  all: unset;
+  padding: 6px 16px;
+  background-color: var(--lavender);
+  height: 32px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  border-radius: 25px;
+  border-bottom: #734f96;
+}
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* .whatsapp-button {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Hover effect */
+/* .whatsapp-button:hover {
+  background-color: darkgreen;
+} */ */
+
+
+nav.logo {
+  margin-left: 120px;
+  padding-left: 25%;
+  margin-right: 120px;
+}
+
+
+ul li {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+ul li :active
+{
+    background-color: #734f96;
+}
+
+ul li::before,
+ul li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4a1381; /* Change the underline color */
+  transition: width 0.3s ease; /* Adding a smooth transition */
+}
+
+ul li::before {
+  left: 50%;
+  transform: translateX(-100%);
+}
+
+ul li::after {
+  right: 50%;
+  transform: translateX(100%);
+}
+
+ul li:hover::before,
+ul li:hover::after {
+  width: 50%; /* Extending the underline on hover */
+}
+
+/* First Banner */
+.FirstBannerText{
+  display: flex;
+  align-items: center;
+  height: calc(100vh-72px);
+}
+
+.FirstBannerText h1{
+  font-weight: 800;
+  line-height: 90px;
+  font-size:80px;
+}
+.container2 p{
+  border-radius:  70% 10% 0% 70%;;
+}
+.FirstBannarBookButton{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;;
+  height: 100vh;
+}
+
+.FirstBannerText.container2 .box{
+  width: 200px; /* Set your desired width */
+  height: 200px; /* Set your desired height */
+  border: 4px solid black;
+}
