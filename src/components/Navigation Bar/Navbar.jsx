@@ -1,40 +1,25 @@
 import "./Navbar.css";
 import logo from "../../Images/logo.png";
-import { Link } from "react-router-dom";
+import Search from "../Search/Search";
+// import { useState } from "react";
 const Navbar = () => {
+  // const [select, setSelect] = useState("Home");
   return (
     <>
       <nav className="container">
         <div className="logo">
           <img src={logo} alt="HiDeck-logo" width="80px" />
         </div>
+        <Search />
+        <hr />
         <ul>
-          <li>
-            <Link to="/src/pages/Home.jsx">Home</Link>
-          </li>
-          <li>
-            <Link to="/src/pages/Menu.jsx">Menu</Link>
-          </li>
-          <li>
-            <Link to="/src/pages/CoupleStay.jsx">Couple Stay</Link>
-          </li>
-          <li>
-            <Link to="/src/pages/VilaAndGroupPartis.jsx">
-              Vila & Group Partis
-            </Link>
-            Vila & Group Partis
-          </li>
-          <li>
-            <Link to="/src/pages/DecorationAndMore.jsx">Decoration & More</Link>
-          </li>
-          <li>
-            <Link to="/src/pages/ContactUs.jsx">Contact Us</Link>
-          </li>
+          <li>Home</li>
+          <li>Menu</li>
+          <li>Couple Stay</li>
+          <li>Vila & Group Partis </li>
+          <li>Decoration & More</li>
         </ul>
-
-        <link to="/src/pages/LoginPage.jsx">
-          <button>Login</button>
-        </link>
+        <button>Login</button>
         {/* <button className="whatsapp-button">
           <img
             src="../src/Images/WhatApp button/whatsapp-6273368_1280.png"

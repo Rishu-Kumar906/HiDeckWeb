@@ -1,5 +1,11 @@
+import React from "react";
+import Navbar from "../components/Navigation Bar/Navbar";
 const ContactUs = () => {
-  return <></>;
+  return (
+    <div>
+      <Navbar />
+    </div>
+  );
 };
 
 export default ContactUs;

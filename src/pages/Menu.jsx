@@ -1,5 +1,12 @@
+import React from "react";
+import Navbar from "../components/Navigation Bar/Navbar";
+
 const Menu = () => {
-  return <div></div>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 };
 
 export default Menu;
